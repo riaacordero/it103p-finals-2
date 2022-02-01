@@ -4,18 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="app.css" rel="stylesheet">
     <title>Portfolio</title>
 </head>
-<body>
-    <main>
-        <div class="column center">
-            <div class="row center" style="gap: 10px;">
-                <a href="cordero/index.html"><h1>Riri</h1></a>
-                <h1>and</h1>
-                <a href="jugar/index.html"><h1>Hernan</h1></a>
-            </div>
-            <p>All shared projects goes <a href="shared/index.html">here.</a></p>
+<header>
+    <ul class="row">
+        <li>home</li>
+        <li>collab works</li>
+    </ul>
+</header>
+<body class="column center">
+    <main id="home" class="column center">
+        <div class="row center gap">
+            <a href="cordero/index.html"><h1 class="text-accent--red">riri</h1></a>
+            <h1 class="text-accent--yellow">+</h1>
+            <a href="jugar/index.html"><h1 class="text-accent--green">hernan</h1></a>
+        </div>
+        <div class="column center gap">
+            <div class="line"></div>
+            <p class="text-white description-text">a project portfolio culminating all projects in IT103P class of 2022.</p>
+            <a href="shared/index.html">
+                <div class="button column center accent--red">
+                    <h3 class="text-white">collaborations</h3>
+                </div>
+            </a>
         </div>
     </main>
 </body>
