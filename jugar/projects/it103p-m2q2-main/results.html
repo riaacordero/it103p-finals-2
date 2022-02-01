@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="app.css" rel="stylesheet">
+    <title>Calorie Tracker - Results</title>
+</head>
+
+<body class="results column center">
+    <div>
+        <div id="result-data"></div>
+        <div class="result-text row center">
+            <h1>Daily calorie needs:</h2>
+            <h1 id="result-calories"></h1>
+        </div>
+        <h2>Log your food below to deduct from the total calories alloted for the day.</h2>
+    </div>
+
+    <form id="results-form" class="column center">
+        <div class="parameter column">
+            <h3>Food Name</h3>
+            <input>
+        </div>
+
+        <div class="parameter column">
+            <h3>Calories</h3>
+            <input type="number" min="1" id="input-calories" step="any">
+        </div>
+
+        <input type="submit" value="Log" class="clickable">
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

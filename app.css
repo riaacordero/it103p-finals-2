@@ -1,0 +1,26 @@
+html{
+    padding: 0%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.start{
+    align-self: flex-start;
+}
+
+.end{
+    align-self: flex-end;
+}

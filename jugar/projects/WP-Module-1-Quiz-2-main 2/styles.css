@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #342a69;
+    --secondary-color: #ef2e72;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, 
+p, 
+a {
+    text-decoration: none;
+}
+
+h1, 
+a {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+p {
+    font-family: "Oxygen", sans-serif;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    text-align: justify;
+    text-align-last: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 300px;
+    display: inline-block;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: var(--primary-color);
+}
+
+header h1, 
+header p, 
+header a {
+    color: whitesmoke;
+}
+
+header nav {
+    list-style: none;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+header nav li a {
+    transition: all 0.2s ease 0s;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+header nav li a:hover {
+    color: var(--secondary-color);
+}
+
+/* sections */
+
+.section {
+    margin: 0 auto;
+    padding-top: 2em;
+    text-align: center;
+}
+
+/* home */
+
+.home-section {
+    background-color: var(--primary-color);
+}
+
+.home-section h1, 
+.home-section p {
+    color: whitesmoke;
+}
+
+/* goals */
+
+.goals-section {
+    background-color: whitesmoke;
+}
+
+.goals-section h1, 
+.goals-section p {
+    color: var(--primary-color);
+}
