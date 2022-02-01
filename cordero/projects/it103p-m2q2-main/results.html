@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>Results | CalifyMe - Calorie Tracker</title>
+</head>
+<body>
+    <div class="main column" style="max-width: 560px; margin: 0 auto; padding-left: 0; padding-right: 0;">
+        <div class="row" style="gap:1em">
+            <h1 class="text-white">Your total calories are: </h1>
+            <h1 id="total-calc-result" class="text-accent-yellow"> ---</h1>
+        </div>
+        <p class="text-white" style="text-align: center;">Log in your food intake data to calculate your remaining calorie intake for the day.</p>
+
+        <div class=" center" style="width: 100%;">
+            <div class="result-form-container">
+                <form id="calorie-tracker-form" class="column form-gap">
+                    <input type="text" class="" name="food-name" id="food-name" placeholder="Name of Food" style="padding:10px;">
+                    <input type="number" class="" name="calories" id="calorie-amount" placeholder="Amount of Calories" min=1 style="padding:10px;">
+                    <input type="submit" value="Calculate" class="button flex center">
+                </form>
+            </div>
+        </div>
+
+        <div id="food-logs" class="column" style="width: 100%; gap: 1em;">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

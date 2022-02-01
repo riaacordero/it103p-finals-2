@@ -1,0 +1,106 @@
+html{
+    background-color: #467B72;
+    background-image: url('assets/bg-img.svg');
+    margin: 0%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    justify-content: center;
+    align-self: center;
+}
+
+/* TEXTS */
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p, input, label, select{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ITEMS */
+
+.button{
+    background-color: #FF7676;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 120px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.button:hover{
+    background-color: #F5EDA1;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+/* COLORS */
+
+.text-white{
+    color: white;
+}
+
+.text-accent-yellow{
+    color: #F5EDA1
+}
+
+.text-accent-pink{
+    color: #FF7676
+}
+
+
+/* CONTAINERS */
+
+.main{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 4em;
+    gap: 2em;
+}
+
+.form-container{
+    background-color: white;
+    border-radius: 15px;
+    padding: 3em;
+    width: 50%;
+}
+
+.form-gap{
+    padding: 7px;
+    gap: 10px;
+}
+
+.result-form-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 3em;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 3em;
+}
+
+fieldset{
+    border: none;
+    padding: 0%;
+}

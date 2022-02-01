@@ -1,0 +1,129 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+}
+
+h1{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+li{
+    font-family: 'Source Code Pro', monospace;
+    list-style: none;
+}
+
+li:hover{
+    color: #E3B5BF;
+    cursor: pointer;
+}
+
+a{
+    gap:0.5em;
+    list-style: none;
+    padding-right: 7.5px;
+    color:#1E272D;
+    text-decoration: none;
+}
+a:hover{
+    color: #E3B5BF;
+    cursor: pointer;
+}
+
+/* flex */
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+/* colors */
+.white{
+    color:white;
+}
+
+/* background */
+
+.bg-colored{
+    background-color: #E3B5BF;
+}
+
+.bg-img{
+    background-image: url('assets/bg-img.png');
+    background-color: #ffffff;
+}
+
+/* alignment */
+
+.left-align{
+    text-align: justify;
+    text-align-last: left;
+}
+
+.right-align{
+    text-align: justify;
+    text-align-last: right;
+}
+
+.center-align{
+    text-align: justify;
+    text-align-last: center;
+}
+
+/* header items */
+header{
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+    justify-content: center;
+    background-color: #1E272D;
+}
+
+/* main */
+
+.main{
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+    gap: 2em;
+}
+
+.background{
+    background-image: url('assets/bg-img.png');
+}
+
+.icons{
+    font-size: 25px;
+}
+
+/* about */
+
+.showcase{
+    border-width: 10px;
+    border-color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    cursor:default;
+}
+
+.showcase:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+footer{
+    justify-content: center;
+    text-align: center;
+    background-color: #1E272D;
+    padding: 1.5em;
+}
