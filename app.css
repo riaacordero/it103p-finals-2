@@ -116,7 +116,8 @@ li{
     border-radius: 100px;
     width: 15vw;
     padding: 2.5vh;
-    transition: all 0.2s ease-in-out;}
+    transition: all 0.2s ease-in-out;
+}
 
 .button:hover{
     cursor: pointer;
@@ -133,10 +134,6 @@ main {
 
 .gap{
     gap: 30px;
-}
-
-.label{
-    gap: 10px;
 }
 
 
@@ -179,6 +176,16 @@ main {
     border-radius: 10px;
     border-width: 5px;
     border-color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.site-thumbnail:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    border-color: #F5EDA1;
+    transition: all 0.2s ease-in-out;
+
 }
 
 .icon{
