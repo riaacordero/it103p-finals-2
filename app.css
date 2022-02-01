@@ -136,7 +136,6 @@ main {
 }
 
 .label{
-    max-width: 50%;
     gap: 10px;
 }
 
@@ -154,7 +153,7 @@ main {
     object-position: 50% top;
     border: solid;
     border-radius: 10px;
-    border-width: 10px;
+    border-width: 5px;
     border-color: #fff;
 }
 
@@ -164,6 +163,24 @@ main {
     border-radius: 100px;
 }
 
+.label{
+    gap: 10px;
+}
+
 .bio{
     max-width: 50%;
+}
+
+.site-thumbnail{
+    height: 220px;
+    width: 290px;
+    object-fit: cover;
+    border: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: #fff;
+}
+
+.icon{
+    font-size: 35px;
 }
