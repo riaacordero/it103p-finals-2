@@ -7,6 +7,8 @@ body{
     margin: 0;
 }
 
+/* FLEX */
+
 .row{
     display: flex;
     flex-direction: row;
@@ -86,6 +88,10 @@ li{
     background-color: #F5EDA1;
 }
 
+.primary--purple{
+    background-color: #41435D;
+}
+
 .text-white {
     color: #fff;
 }
@@ -130,16 +136,28 @@ li{
     background-color: #F5EDA1;
 }
 
+/* NAVBAR */
+
+nav{
+    padding: 1%;
+}
+
+.nav-right{
+    justify-content: flex-end;
+    margin-right: 3%;
+}
+
 /* MAIN */
 
-main {
-    margin: 5%;
+#profile, #home {
+    padding: 5%;
+    margin: 0 auto;
+    width: 960px;
 }
 
 .gap{
     gap: 30px;
 }
-
 
 /* PROFILE */
 
