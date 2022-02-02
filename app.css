@@ -64,9 +64,9 @@ h3, h4, h5, h6, li, p, a {
     position: relative;
 }
 
-#home h1:hover{
+#home h1.title:hover{
     cursor: pointer;
-    color:#F5EDA1
+    color:#5DB9FF;
 }
 
 li{
@@ -80,6 +80,10 @@ li{
 
 /* COLOR */
 
+.primary--purple{
+    background-color: #41435D;
+}
+
 .accent--red {
     background-color:#FF7676;
 }
@@ -92,8 +96,8 @@ li{
     background-color: #F5EDA1;
 }
 
-.primary--purple{
-    background-color: #41435D;
+.accent--blue{
+    background-color: #5DB9FF;
 }
 
 .text-white {
@@ -114,6 +118,10 @@ li{
 
 .text-accent--yellow{
     color: #F5EDA1;
+}
+
+.text-accent--blue{
+    color: #5DB9FF
 }
 
 
@@ -137,13 +145,17 @@ li{
     cursor: pointer;
     transform: scale(1.05);
     transition: all 0.2s ease-in-out;
-    background-color: #F5EDA1;
+    background-color: #5DB9FF;
 }
 
 /* NAVBAR */
 
 nav{
     padding: 1%;
+}
+
+.nav-item:hover{
+    color: #F5EDA1;
 }
 
 .nav-right{
@@ -209,7 +221,7 @@ nav{
     cursor: pointer;
     transform: scale(1.05);
     transition: all 0.2s ease-in-out;
-    border-color: #F5EDA1;
+    border-color: #5DB9FF;
     transition: all 0.2s ease-in-out;
 
 }
