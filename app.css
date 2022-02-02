@@ -210,6 +210,7 @@ nav{
     height: 220px;
     width: 290px;
     object-fit: cover;
+    filter: grayscale(100%);
     border: solid;
     border-radius: 10px;
     border-width: 5px;
@@ -222,7 +223,7 @@ nav{
     transform: scale(1.05);
     transition: all 0.2s ease-in-out;
     border-color: #5DB9FF;
-    transition: all 0.2s ease-in-out;
+    filter: none;
 
 }
 
