@@ -37,6 +37,10 @@ body{
     justify-content: center;
 }
 
+.add-flex{
+    flex: 1;
+}
+
 /* TEXT PROPERTIES */
 
 h1, h2, h3, h4, h5, h6,
@@ -149,7 +153,7 @@ nav{
 
 /* MAIN */
 
-#profile, #home {
+#profile, #home, #collab-page {
     padding: 5%;
     margin: 0 auto;
     width: 960px;
@@ -213,9 +217,6 @@ nav{
 .icon{
     font-size: 35px;
 }
-
-/* COLLAB PAGE */
-
 
 
 /* BACKGROUND IMAGE */
