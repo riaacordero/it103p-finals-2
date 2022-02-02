@@ -59,6 +59,10 @@ h3, h4, h5, h6, li, p, a {
     font-family: 'Source Code Pro', monospace;
 }
 
+a {
+    font-weight: 600;
+}
+
 #home h1{
     font-size: 75px;
     position: relative;
@@ -152,6 +156,10 @@ li{
 
 nav{
     padding: 1%;
+}
+
+.nav-item .active{
+    color: #F5EDA1;
 }
 
 .nav-item:hover{
