@@ -1,0 +1,283 @@
+:root {
+    --accent-color: #CC0000;
+}
+
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+/* FLEX */
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    align-self: flex-start;
+}
+
+.end {
+    align-self: flex-end;
+}
+
+
+/* TEXT */
+
+h1, h2, h3, h4,
+li, p, a, button, strong, input {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 5.9vw;
+}
+
+h2 {
+    font-size: 3vh;
+}
+
+h3, button {
+    font-size: 2.5vmin;
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+}
+
+
+/* COLORS */
+
+.fg-white {
+    color: white;
+}
+
+.fg-black {
+    color: black;
+}
+
+.fg-accent {
+    color: var(--accent-color);
+}
+
+
+/* HOME */
+.intro {
+    background-color: var(--accent-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%25000000' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 4vh;
+}
+
+.intro > * {
+    color: white;
+}
+
+.intro > svg {
+    position: absolute;
+    fill: black;
+    opacity: .1;
+}
+
+.intro-content {
+    padding-top: 8vw;
+    z-index: 2;
+}
+
+.intro-primary {
+    margin: 0 8vw;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.intro input {
+    color: gray;
+    width: 60vw;
+    font-size: 3vh;
+    border: none;
+    border-radius: .5vw;
+    padding: 1vw;
+    margin-bottom: 2vh;
+}
+
+.intro input:focus {
+    outline: none;
+}
+
+.filter-list {
+    width: 60vw;
+    gap: 1vw;
+    margin: 0 10.8vw 8vh 10.8vw;
+}
+
+.filter-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: .5vw;
+    padding: 1vw;
+    font-weight: 700;
+}
+
+.filter-btn:hover, .filter-btn.selected {
+    color: black;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: gray;
+}
+
+.filter-btn.selected {
+    background-color: white;
+}
+
+.filter-menu > div {
+    display: none;
+    background-color: white;
+    margin: -6vh 10.8vw 8vh 10.8vw;
+    border-radius: .5vw;
+    overflow: hidden;
+}
+
+.filter-menu > div.expanded {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filter-menu p {    
+    flex: 1;
+    padding: 1vw 1.5vw;
+    color: black;
+    text-align: center;
+}
+
+.filter-menu p:hover, .filter-menu p.selected {
+    cursor: pointer;
+}
+
+.filter-menu p:hover {
+    background-color: gray;
+}
+
+.filter-menu p.selected {
+    background-color: black;
+    color: white;
+}
+
+.search-button {
+    justify-content: space-between;
+    text-align: center;
+    width: 100vw;
+}
+
+.search-button a {
+    margin-top: -2.5vmin;
+}
+
+.search-button a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.search-space {
+    width: 35vw;
+    height: 0;
+    border-bottom: 6vmin solid white;
+}
+
+#search-space-left {
+    border-right: 4vw solid transparent;
+    border-radius: 0 0 0 0;
+}
+
+#search-space-right {
+    border-left: 4vw solid transparent;
+}
+
+.pokemon-list {
+    overflow-x: hidden;
+}
+
+.pokemon-list h1 {
+    text-align: center;
+    font-size: 4vw;
+    color: var(--accent-color);
+}
+
+.pokemon-list-content {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    margin: 5vw;
+}
+
+.pokemon-item {
+    flex: 0 0 20%;
+    width: 160px;
+    height: 500px;
+    border-radius: 1vw;
+    padding: 1vw;
+    margin: 1vw;
+}
+
+.pokemon-item.hidden {
+    display: none;
+}
+
+.pokemon-item > img {
+    object-fit: cover;
+    margin-bottom: 3vh;
+}
+
+.pokemon-item > h2, .pokemon-item > h3, .pokemon-item > p {
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 1vh 1vw;
+}
+
+.pokemon-item > h2 {
+    width: auto;
+    text-align: center;
+    border-radius: 1vw 1vw 0 0;
+}
+
+.pokemon-type-group {
+    border-radius: 0 0 1vw 1vw;
+    margin-bottom: 2vh;
+}
+
+.pokemon-type-group > p {
+    flex: 1;
+    text-align: center;
+}
+
+.pokemon-item > h3 {
+    border-radius: .5vw .5vw 0 0;
+    text-align: center;
+}
+
+.pokemon-item > p {
+    overflow-y: auto;
+    border-radius: 0 0 .5vw .5vw;
+    height: auto;
+}
